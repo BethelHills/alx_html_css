@@ -1,3 +1,78 @@
+/* Custom color and background styling */
+body {
+	background: linear-gradient(120deg, #f0f4f8 0%, #e0e7ef 100%);
+	color: #222;
+}
+
+header {
+	background: #1a237e;
+	color: #fff;
+	padding: 1.5rem 0 1rem 0;
+	box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+}
+
+header h1 {
+	margin: 0.5rem 0 0 0;
+	font-size: 2.2rem;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	justify-content: center;
+}
+
+nav .logo {
+	font-size: 2.5rem;
+	margin-right: 1.5rem;
+	color: #ffb300;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s;
+}
+
+nav a:hover {
+	color: #ffb300;
+}
+
+main {
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 24px rgba(26,35,126,0.06);
+	margin: 2rem auto;
+	max-width: 1100px;
+	padding: 2rem;
+}
+
+footer {
+	background: #1a237e;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+	margin-top: 2rem;
+	border-radius: 0 0 12px 12px;
+}
+
+article {
+	background: #f9fafc;
+	border-radius: 8px;
+	padding: 1.5rem;
+	box-shadow: 0 2px 8px rgba(26,35,126,0.04);
+}
+
+aside {
+	background: #f3e5f5;
+	border-radius: 8px;
+	padding: 1.5rem;
+	box-shadow: 0 2px 8px rgba(186,104,200,0.08);
+}
 /* Flexbox layout for main containers */
 body {
 	display: flex;
