@@ -142,6 +142,114 @@ p {
   opacity: 0.8; /* softer text */
 }
 
+/* Container for the section */
+.videos-section {
+    padding: 50px 20px;
+    background-color: #ffffff; /* or your Figma background color */
+    text-align: center;
+}
+
+/* Section heading */
+.videos-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000; /* main heading color */
+    margin-bottom: 40px;
+}
+
+/* Flex container for video cards */
+.videos-container {
+    display: flex;
+    gap: 30px; /* spacing between cards */
+    justify-content: center;
+    flex-wrap: wrap; /* responsive for smaller screens */
+}
+
+/* Individual video card */
+.video-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 220px; /* adjust as per Figma */
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Video thumbnail */
+.video-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* Play button overlay */
+.video-card .play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Video title */
+.video-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+/* Video description */
+.video-card p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 12px;
+}
+
+/* Author info and rating */
+.video-card .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.video-card .author img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.video-card .author span {
+    font-size: 14px;
+    color: #8e2de2; /* purple from Figma */
+}
+
+/* Stars and duration */
+.video-card .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #8e2de2;
+}
+
+.video-card .stars {
+    color: #8e2de2;
+}
+
 /* Main content */
 main {
   max-width: 1200px;
