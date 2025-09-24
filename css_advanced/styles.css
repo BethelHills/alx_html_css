@@ -323,6 +323,61 @@ p {
   background-color: #3730a3; /* darker shade on hover */
 }
 
+/* FAQ Section */
+.faq {
+  padding: 60px 20px;
+  background-color: #ffffff; /* clean background */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: 600;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e5e5; /* subtle divider */
+  padding: 20px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq .question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  position: relative;
+  padding-right: 25px;
+}
+
+.faq .question::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #4f46e5; /* primary Figma color */
+  transition: transform 0.3s;
+}
+
+.faq .question.active::after {
+  content: "-";
+}
+
+.faq .answer {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+  display: none;
+}
+
 /* Main content */
 main {
   max-width: 1200px;

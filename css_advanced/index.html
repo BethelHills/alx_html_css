@@ -62,6 +62,22 @@
     </div>
   </section>
 
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3 class="question">What is the membership about?</h3>
+      <p class="answer">Our membership gives you access to exclusive content, tutorials, and support.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="question">Can I cancel anytime?</h3>
+      <p class="answer">Yes, you can cancel your subscription at any time with no extra fees.</p>
+    </div>
+    <div class="faq-item">
+      <h3 class="question">Is there a free trial?</h3>
+      <p class="answer">We offer a 7-day free trial for all new members.</p>
+    </div>
+  </section>
+
   <main>
     <section>
       <h2>Welcome to SmileSchool</h2>
@@ -72,5 +88,21 @@
   <footer>
     <p>&copy; 2025 SmileSchool - Advanced CSS Project</p>
   </footer>
+
+  <script>
+    const questions = document.querySelectorAll('.faq .question');
+
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        const answer = q.nextElementSibling;
+        if (answer.style.display === 'block') {
+          answer.style.display = 'none';
+        } else {
+          answer.style.display = 'block';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
