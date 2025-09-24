@@ -378,6 +378,109 @@ p {
   display: none;
 }
 
+/* Footer Section */
+.footer {
+  background-color: #1f2937; /* dark Figma-like color */
+  color: #f9f9f9; /* light text */
+  padding: 60px 20px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  color: #d1d5db;
+}
+
+.footer-links h4,
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover,
+.footer-social ul li a:hover {
+  color: #4f46e5; /* primary accent color */
+}
+
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons li a {
+  display: inline-block;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons li a svg {
+  width: 24px; /* adjust size */
+  height: 24px;
+  filter: brightness(0.8); /* subtle dim for normal state */
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.social-icons li a:hover svg {
+  filter: brightness(1) drop-shadow(0 0 5px #4f46e5); /* Figma-style glow */
+  transform: translateY(-3px); /* slight lift effect */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links, .footer-social {
+    margin-top: 20px;
+  }
+}
+
 /* Main content */
 main {
   max-width: 1200px;
