@@ -261,6 +261,68 @@ p {
     color: #8e2de2;
 }
 
+/* Membership Section */
+.membership {
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* light background from Figma */
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222; /* dark heading color */
+  font-weight: 600;
+}
+
+.membership .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* spacing between cards */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+.membership .card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.membership .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.membership .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.membership .card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.membership .card button {
+  background-color: #4f46e5; /* primary button color from Figma */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.membership .card button:hover {
+  background-color: #3730a3; /* darker shade on hover */
+}
+
 /* Main content */
 main {
   max-width: 1200px;
