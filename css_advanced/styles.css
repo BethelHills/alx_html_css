@@ -157,6 +157,10 @@ p {
     margin-bottom: 40px;
 }
 
+.videos-section h2 .highlight {
+    color: #C271FF; /* purple emphasis for "popular" */
+}
+
 /* Flex container for video cards */
 .videos-container {
     display: flex;
@@ -247,6 +251,13 @@ p {
 }
 
 .video-card .stars {
+    color: #8e2de2;
+}
+
+/* Duration alignment */
+.video-card .duration {
+    text-align: right;
+    font-size: 14px;
     color: #8e2de2;
 }
 
