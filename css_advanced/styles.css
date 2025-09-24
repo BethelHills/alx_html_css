@@ -90,6 +90,58 @@ header nav ul li a {
   color: #C271FF; /* highlight color from Figma */
 }
 
+/* Reuse typography */
+p {
+  margin: 0;
+}
+
+.quote {
+  background-color: #C271FF; /* exact purple from Figma */
+  padding: 80px 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.quote-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* spacing between image and text */
+}
+
+.quote-img {
+  width: 150px;   /* match Figma size */
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.quote-message {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.quote-author {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quote-role {
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.8; /* softer text */
+}
+
 /* Main content */
 main {
   max-width: 1200px;
