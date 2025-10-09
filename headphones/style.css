@@ -53,11 +53,16 @@ body {
   text-align: center;
   padding: 100px 20px;
 }
+.hero-content {
+  max-width: 100%;
+}
 .hero-content h1 {
   font-size: 2.5rem;
+  margin-bottom: 10px;
 }
-.hero-content p {
+.hero-content > p:first-of-type {
   margin: 20px 0;
+  max-width: 100%;
 }
 .btn {
   background: #ff4a57;
@@ -66,17 +71,20 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 0;
+  margin: 0;
   display: inline-block;
 }
 .hero-description {
-  max-width: 650px;
-  margin: 40px auto 0;
+  max-width: 637px;
+  margin: 40px auto 0 auto !important;
   line-height: 1.8;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   padding: 0 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Responsive adjustments */
@@ -84,7 +92,7 @@ body {
   .hero-description {
     max-width: 580px;
     font-size: 15px;
-    margin-top: 35px;
+    margin-top: 35px !important;
   }
 }
 
@@ -92,7 +100,7 @@ body {
   .hero-description {
     max-width: 90%;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 30px !important;
     padding: 0 15px;
   }
 }
