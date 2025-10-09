@@ -172,9 +172,21 @@ body {
   z-index: 1;
 }
 .results h2,
+.results-description,
 .results-container {
   position: relative;
   z-index: 2;
+}
+.results-description {
+  max-width: 650px;
+  margin: 20px auto 40px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .results-container {
   display: flex;
@@ -269,7 +281,8 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .features-description {
+  .features-description,
+  .results-description {
     max-width: 90%;
     font-size: 15px;
     padding: 0 20px;
@@ -289,7 +302,8 @@ body {
   .hero-content h1 {
     font-size: 2rem;
   }
-  .features-description {
+  .features-description,
+  .results-description {
     max-width: 95%;
     font-size: 14px;
     padding: 0 15px;
