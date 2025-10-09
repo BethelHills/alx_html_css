@@ -24,7 +24,8 @@ body {
   align-items: center;
 }
 .nav {
-  display: none; /* Hidden on all devices */
+  display: flex; /* Show on desktop/tablet */
+  align-items: center;
 }
 .nav a {
   color: white;
@@ -38,7 +39,7 @@ body {
   color: #ff4a57;
 }
 .menu-icon {
-  display: block;
+  display: none; /* Hidden on desktop/tablet */
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
@@ -57,9 +58,13 @@ body {
   filter: brightness(0) invert(1) drop-shadow(0 0 3px rgba(255, 255, 255, 0.8));
 }
 
-/* Mobile specific styling for better visibility */
+/* Mobile specific styling */
 @media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide nav links on mobile */
+  }
   .menu-icon {
+    display: block; /* Show hamburger menu on mobile */
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid rgba(255, 255, 255, 0.5);
     padding: 10px;
