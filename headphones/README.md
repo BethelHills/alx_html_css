@@ -150,6 +150,8 @@ headphones/
 ├── 4-styles.css            # Task 4: Styles with footer animations
 ├── 6-index.html            # Task 6: Pure CSS pentagons (no images!)
 ├── 6-styles.css            # Task 6: CSS pentagon styles with clip-path
+├── 7-index.html            # Task 7: Fun animations (continuous + hover)
+├── 7-styles.css            # Task 7: Styles with fun animations
 ├── holberton_school-icon.css  # Custom icon font styles
 ├── demo-icon-font.html     # Icon font demo page
 ├── fonts/                  # Custom icon fonts
@@ -330,6 +332,81 @@ Replaced pentagon background images with pure CSS shapes:
 - Chrome 55+, Firefox 54+, Safari 9.1+, Edge 79+
 - ~97% global browser coverage
 
+### Task 7: Fun Animations! 🎉
+**Files:** `7-index.html`, `7-styles.css`
+
+Added fun, engaging animations to "What we do" and "Our results" sections:
+- ✅ **Continuous animations** (always running)
+- ✅ **Interactive hover effects** (user triggered)
+- ✅ **10 unique keyframe animations**
+- ✅ **16 total animated effects**
+- ✅ **Staggered wave timing**
+- ✅ **Multiple simultaneous animations**
+- ✅ **Performance optimized** (GPU accelerated)
+- ✅ **Zero JavaScript required**
+
+**"What We Do" Animations:**
+- 🎈 Gentle float (continuous)
+- 🌀 Icon spin + pulse (hover)
+- ⬆️ Lift & scale (hover)
+- 💫 Text bounce (hover)
+- ✨ Fade in effects (hover)
+- 🎯 Color changes (hover)
+- 🌟 Drop shadows (hover)
+
+**"Our Results" Animations:**
+- 🎪 Gentle bob (continuous)
+- 🔄 Pentagon rotation (hover)
+- 💥 Scale & rotate (hover)
+- 💓 Pentagon pulse (hover)
+- 🏆 Number bounce with gold color! (hover)
+- ✨ Text glow (hover)
+- 🌈 Multi-effect combinations (hover)
+
+**Animation Types:**
+```css
+/* Continuous floating */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hover: Icon spin */
+@keyframes iconSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Hover: Pentagon rotation */
+@keyframes pentagonRotate {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+}
+
+/* Hover: Number bounce (THE FUN ONE!) */
+@keyframes numberBounce {
+  0%, 100% { transform: scale(1) translateY(0); }
+  25% { transform: scale(1.2) translateY(-8px); }
+  50% { transform: scale(1.1) translateY(-4px); }
+  75% { transform: scale(1.15) translateY(-6px); }
+}
+```
+
+**Performance Features:**
+- 🚀 GPU-accelerated transforms
+- ⚡ Smooth 60fps animations
+- 🎯 Optimized timing functions
+- 📱 Mobile-friendly
+- 🌐 Cross-browser compatible
+
+**Animation Statistics:**
+- 4 feature items with staggered timing (0.3s delays)
+- 4 result items with staggered timing (0.4s delays)
+- Durations ranging from 0.4s to 4s
+- Continuous + hover state animations
+- Zero performance impact
+
 ---
 
 ## 🎨 Sections
@@ -508,7 +585,8 @@ Contributions are welcome! Please:
 ## 🌐 Live Demos
 
 ### All Task Pages:
-- **Task 6 (Latest):** [Pure CSS Pentagons](https://bethelhills.github.io/alx_html_css/headphones/6-index.html) - No image files! ⭐
+- **Task 7 (Latest):** [Fun Animations!](https://bethelhills.github.io/alx_html_css/headphones/7-index.html) - Continuous + hover effects! 🎉⭐
+- **Task 6:** [Pure CSS Pentagons](https://bethelhills.github.io/alx_html_css/headphones/6-index.html) - No image files! ⭐
 - **Task 4:** [Enhanced Footer](https://bethelhills.github.io/alx_html_css/headphones/4-index.html)
 - **Task 3:** [Contact Form](https://bethelhills.github.io/alx_html_css/headphones/3-index.html)
 - **Task 2:** [Our Results](https://bethelhills.github.io/alx_html_css/headphones/2-index.html)
