@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holberton School Icon Font - Demo</title>
+  <link rel="stylesheet" href="holberton_school-icon.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f5f5f5;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .icon-item {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    
+    .icon-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    .icon-display {
+      font-size: 64px;
+      color: #ff6565;
+      margin-bottom: 15px;
+    }
+    
+    .icon-name {
+      font-size: 14px;
+      color: #666;
+      word-break: break-all;
+    }
+    
+    .usage-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+    
+    .usage-section h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    
+    pre {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin: 10px 0;
+    }
+    
+    code {
+      color: #e83e8c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Holberton School Icon Font</h1>
+  
+  <div class="icon-grid">
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_sound icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_sound</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_video icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_video</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_music icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_music</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_hearing icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_hearing</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_facebook icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_facebook</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_twitter icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_twitter</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_instagram icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_instagram</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-menu icon-display"></span>
+      <div class="icon-name">holberton_school-icon-menu</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-star icon-display"></span>
+      <div class="icon-name">holberton_school-icon-star</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-check icon-display"></span>
+      <div class="icon-name">holberton_school-icon-check</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_money icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_money</div>
+    </div>
+    
+    <div class="icon-item">
+      <span class="holberton_school-icon-ic_laptop icon-display"></span>
+      <div class="icon-name">holberton_school-icon-ic_laptop</div>
+    </div>
+  </div>
+  
+  <div class="usage-section">
+    <h2>How to Use</h2>
+    
+    <h3>1. Include the CSS file in your HTML:</h3>
+    <pre><code>&lt;link rel="stylesheet" href="holberton_school-icon.css"&gt;</code></pre>
+    
+    <h3>2. Use the icon class on a span or i element:</h3>
+    <pre><code>&lt;span class="holberton_school-icon-ic_sound"&gt;&lt;/span&gt;</code></pre>
+    
+    <h3>3. Style the icon with CSS:</h3>
+    <pre><code>.my-icon {
+  font-size: 64px;
+  color: #ff6565;
+  display: block;
+  margin: 20px auto;
+}</code></pre>
+    
+    <h3>4. Example Implementation:</h3>
+    <pre><code>&lt;div class="feature"&gt;
+  &lt;span class="holberton_school-icon-ic_sound feature-icon" aria-hidden="true"&gt;&lt;/span&gt;
+  &lt;h3&gt;Sound Quality&lt;/h3&gt;
+  &lt;p&gt;Experience crystal clear audio&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+  </div>
+</body>
+</html>
+

@@ -136,19 +136,57 @@ This project is a pixel-perfect implementation of a Figma design for a headphone
 
 ```
 headphones/
-├── index.html              # Main HTML file
-├── styles.css              # Main stylesheet
-├── images/                 # Image assets
-│   ├── logo.png
-│   ├── hero-bg.jpg
-│   ├── product-1.jpg
-│   └── ...
-├── icons/                  # Icon assets
-│   ├── icon-location.svg
-│   ├── icon-email.svg
-│   └── ...
+├── index.html              # Main HTML file (latest)
+├── style.css               # Main stylesheet (latest)
+├── 0-index.html            # Task 0: Base HTML structure
+├── 0-styles.css            # Task 0: Base styles
+├── 1-index.html            # Task 1: What we do with font icons
+├── 1-styles.css            # Task 1: Styles with font icons
+├── holberton_school-icon.css  # Custom icon font styles
+├── demo-icon-font.html     # Icon font demo page
+├── fonts/                  # Custom icon fonts
+│   └── README.md           # Font usage guide
+├── assets/
+│   └── image/              # Images and icons
+│       ├── logo_headphones.png
+│       ├── headphones_hero_1.jpg
+│       ├── headphones_hero_2.jpg
+│       ├── pentagone.png
+│       ├── favicon.png
+│       └── *.svg           # SVG icons
 └── README.md              # This file
 ```
+
+---
+
+## 📝 Tasks
+
+### Task 0: Header and Hero Section
+**Files:** `0-index.html`, `0-styles.css`
+
+Basic structure with:
+- Header with logo and navigation
+- Hero section with background image
+- Responsive hamburger menu for mobile
+- Call-to-action button
+
+### Task 1: What We Do Section
+**Files:** `1-index.html`, `1-styles.css`, `holberton_school-icon.css`
+
+Implemented "What we do..." section with:
+- ✅ Custom font icons (Holberton School icon font)
+- ✅ Four feature cards with icons
+- ✅ Responsive grid layout
+- ✅ Generic component structure for reusability
+- ✅ Icons: sound, video, music, hearing
+- ✅ Demo page for icon usage
+
+**Icon Usage:**
+```html
+<span class="holberton_school-icon-ic_sound feature-icon" aria-hidden="true"></span>
+```
+
+**View Demo:** Open `demo-icon-font.html` to see all available icons
 
 ---
 
