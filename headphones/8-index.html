@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphone Landing Page - With Hamburger Menu</title>
+  <link rel="stylesheet" href="8-styles.css">
+  <link rel="stylesheet" href="holberton_school-icon.css">
+  <link rel="icon" type="image/png" href="assets/image/favicon.png">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <img src="assets/image/logo_headphones.png" alt="Logo" class="logo">
+      <nav class="nav" id="mainNav">
+        <a href="#what-we-do">what we do</a>
+        <a href="#our-results">our results</a>
+        <a href="#contact-us">contact us</a>
+      </nav>
+      <button class="menu-icon" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+      <button class="btn">CALL TO ACTION</button>
+      <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="features" id="what-we-do">
+    <h2>What we do...</h2>
+    <p class="features-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="feature-container">
+      <div class="feature">
+        <span class="holberton_school-icon-ic_sound feature-icon" aria-hidden="true"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <span class="holberton_school-icon-ic_video feature-icon" aria-hidden="true"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <span class="holberton_school-icon-ic_music feature-icon" aria-hidden="true"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="feature">
+        <span class="holberton_school-icon-ic_hearing feature-icon" aria-hidden="true"></span>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results" id="our-results">
+    <h2>Our results speak for themselves</h2>
+    <p class="results-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="results-container">
+      <div class="result-item">
+        <div class="pentagon-wrapper">
+          <img src="assets/image/pentagone.png" alt="" class="pentagon-bg" aria-hidden="true">
+          <div class="result-content">
+            <div class="result-percentage">+2%</div>
+            <p class="result-text">Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+      <div class="result-item">
+        <div class="pentagon-wrapper">
+          <img src="assets/image/pentagone.png" alt="" class="pentagon-bg" aria-hidden="true">
+          <div class="result-content">
+            <div class="result-percentage">+2%</div>
+            <p class="result-text">Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+      <div class="result-item">
+        <div class="pentagon-wrapper">
+          <img src="assets/image/pentagone.png" alt="" class="pentagon-bg" aria-hidden="true">
+          <div class="result-content">
+            <div class="result-percentage">+2%</div>
+            <p class="result-text">Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+      <div class="result-item">
+        <div class="pentagon-wrapper">
+          <img src="assets/image/pentagone.png" alt="" class="pentagon-bg" aria-hidden="true">
+          <div class="result-content">
+            <div class="result-percentage">+2%</div>
+            <p class="result-text">Lorem ipsum dolor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact-us">
+    <h2>Contact us</h2>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-group">
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Name" 
+          required
+          minlength="2"
+          maxlength="50"
+          aria-label="Your name"
+          class="form-input">
+        <span class="error-message" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Email" 
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          aria-label="Your email address"
+          class="form-input">
+        <span class="error-message" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <textarea 
+          id="message" 
+          name="message" 
+          placeholder="Your message" 
+          required
+          minlength="10"
+          maxlength="500"
+          rows="5"
+          aria-label="Your message"
+          class="form-input"></textarea>
+        <span class="error-message" id="messageError"></span>
+      </div>
+      <button type="submit" class="btn btn-submit">
+        <span class="btn-text">CALL TO ACTION</span>
+        <span class="btn-loader" style="display: none;"></span>
+      </button>
+      <div class="success-message" id="successMessage" style="display: none;">
+        Thank you! Your message has been sent successfully.
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Footer Logo -->
+      <div class="footer-logo-section">
+        <img src="assets/image/logo_headphones.png" alt="Headphones Logo" class="footer-logo">
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page" class="social-link">
+          <img src="assets/image/Facebook_White.svg" alt="Facebook icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter page" class="social-link">
+          <img src="assets/image/Twitter_White.svg" alt="Twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page" class="social-link">
+          <img src="assets/image/Instagram_White.svg" alt="Instagram icon">
+        </a>
+      </div>
+
+      <!-- Copyright Text -->
+      <div class="footer-copyright">
+        <p>© 2025 Headphones. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Form validation and submission
+    const form = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    const successMessage = document.getElementById('successMessage');
+
+    // Real-time validation
+    nameInput.addEventListener('blur', () => validateField(nameInput, 'nameError'));
+    emailInput.addEventListener('blur', () => validateField(emailInput, 'emailError'));
+    messageInput.addEventListener('blur', () => validateField(messageInput, 'messageError'));
+
+    // Clear error on input
+    nameInput.addEventListener('input', () => clearError('nameError'));
+    emailInput.addEventListener('input', () => clearError('emailError'));
+    messageInput.addEventListener('input', () => clearError('messageError'));
+
+    function validateField(input, errorId) {
+      const errorElement = document.getElementById(errorId);
+      
+      if (!input.value.trim()) {
+        showError(errorElement, 'This field is required');
+        input.classList.add('error');
+        return false;
+      }
+      
+      if (input.minLength && input.value.length < input.minLength) {
+        showError(errorElement, `Minimum ${input.minLength} characters required`);
+        input.classList.add('error');
+        return false;
+      }
+      
+      if (input.type === 'email' && !isValidEmail(input.value)) {
+        showError(errorElement, 'Please enter a valid email address');
+        input.classList.add('error');
+        return false;
+      }
+      
+      clearError(errorId);
+      input.classList.remove('error');
+      input.classList.add('success');
+      return true;
+    }
+
+    function isValidEmail(email) {
+      return /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(email);
+    }
+
+    function showError(element, message) {
+      element.textContent = message;
+      element.style.display = 'block';
+    }
+
+    function clearError(errorId) {
+      const errorElement = document.getElementById(errorId);
+      errorElement.textContent = '';
+      errorElement.style.display = 'none';
+    }
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Validate all fields
+      const isNameValid = validateField(nameInput, 'nameError');
+      const isEmailValid = validateField(emailInput, 'emailError');
+      const isMessageValid = validateField(messageInput, 'messageError');
+      
+      if (isNameValid && isEmailValid && isMessageValid) {
+        // Show loading state
+        const btnText = document.querySelector('.btn-text');
+        const btnLoader = document.querySelector('.btn-loader');
+        const submitBtn = document.querySelector('.btn-submit');
+        
+        submitBtn.disabled = true;
+        btnText.style.display = 'none';
+        btnLoader.style.display = 'inline-block';
+        
+        // Simulate form submission (replace with actual submission)
+        setTimeout(() => {
+          // Reset button
+          btnText.style.display = 'inline';
+          btnLoader.style.display = 'none';
+          submitBtn.disabled = false;
+          
+          // Show success message
+          successMessage.style.display = 'block';
+          form.reset();
+          
+          // Remove success classes
+          nameInput.classList.remove('success');
+          emailInput.classList.remove('success');
+          messageInput.classList.remove('success');
+          
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            successMessage.style.display = 'none';
+          }, 5000);
+        }, 1500);
+      }
+    });
+  </script>
+  
+  <!-- Hamburger Menu Script -->
+  <script src="8-script.js"></script>
+</body>
+</html>
+

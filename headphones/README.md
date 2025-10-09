@@ -152,6 +152,9 @@ headphones/
 ├── 6-styles.css            # Task 6: CSS pentagon styles with clip-path
 ├── 7-index.html            # Task 7: Fun animations (continuous + hover)
 ├── 7-styles.css            # Task 7: Styles with fun animations
+├── 8-index.html            # Task 8: Hamburger menu (pure JavaScript)
+├── 8-styles.css            # Task 8: Styles with mobile menu
+├── 8-script.js             # Task 8: JavaScript for hamburger functionality
 ├── holberton_school-icon.css  # Custom icon font styles
 ├── demo-icon-font.html     # Icon font demo page
 ├── fonts/                  # Custom icon fonts
@@ -407,6 +410,82 @@ Added fun, engaging animations to "What we do" and "Our results" sections:
 - Continuous + hover state animations
 - Zero performance impact
 
+### Task 8: Hamburger Menu 🍔
+**Files:** `8-index.html`, `8-styles.css`, `8-script.js`
+
+Implemented functional hamburger menu for mobile navigation:
+- ✅ **Pure JavaScript** (no frameworks!)
+- ✅ **Mobile breakpoint** at ≤480px
+- ✅ **Animated icon** (hamburger → X)
+- ✅ **Full-screen mobile menu**
+- ✅ **Smooth animations throughout**
+- ✅ **Staggered link entrance** (0.1s delays)
+- ✅ **Click outside to close** (overlay)
+- ✅ **ESC key support**
+- ✅ **Smooth scroll navigation**
+- ✅ **Accessibility features** (ARIA)
+- ✅ **Body scroll lock** when open
+- ✅ **Touch-friendly design**
+
+**Hamburger Animation:**
+```css
+/* Closed state: Three horizontal lines */
+━━━━━  ← Line 1
+━━━━━  ← Line 2
+━━━━━  ← Line 3
+
+/* Open state: Transforms to X */
+    ╲
+━━━━━X━━━━━
+    ╱
+```
+
+**Transform Details:**
+- Line 1: `rotate(45deg) translate(8px, 8px)`
+- Line 2: `opacity: 0` + `translateX(-20px)`
+- Line 3: `rotate(-45deg) translate(8px, -8px)`
+- Timing: 0.3s cubic-bezier bounce
+
+**Mobile Menu Features:**
+- Fixed header with blur backdrop
+- Full-screen dark overlay (95% opacity)
+- Centered navigation links (24px font)
+- Staggered slide-in animation
+- Hover effects with background slide
+- Auto-close on link click
+- Smooth scroll to sections
+
+**JavaScript Features:**
+```javascript
+// Core functions
+- toggleMenu() - Toggle open/closed
+- closeMenu() - Close menu
+- handleNavClick() - Link click + smooth scroll
+- handleResize() - Close on window resize
+- handleKeyPress() - Close on ESC key
+
+// Event listeners
+- Hamburger click
+- Overlay click
+- Navigation link clicks
+- Window resize
+- Keyboard (ESC)
+```
+
+**Accessibility:**
+- `aria-expanded` attribute (true/false)
+- `aria-label` on hamburger button
+- Keyboard navigation support
+- Screen reader friendly
+- Focus management
+
+**Performance:**
+- GPU-accelerated transforms
+- Efficient event handling
+- IIFE to avoid global scope
+- Zero framework dependencies
+- ~3.7 KB JavaScript file
+
 ---
 
 ## 🎨 Sections
@@ -585,7 +664,8 @@ Contributions are welcome! Please:
 ## 🌐 Live Demos
 
 ### All Task Pages:
-- **Task 7 (Latest):** [Fun Animations!](https://bethelhills.github.io/alx_html_css/headphones/7-index.html) - Continuous + hover effects! 🎉⭐
+- **Task 8 (Latest):** [Hamburger Menu!](https://bethelhills.github.io/alx_html_css/headphones/8-index.html) - Pure JavaScript! 🍔⭐
+- **Task 7:** [Fun Animations!](https://bethelhills.github.io/alx_html_css/headphones/7-index.html) - Continuous + hover effects! 🎉
 - **Task 6:** [Pure CSS Pentagons](https://bethelhills.github.io/alx_html_css/headphones/6-index.html) - No image files! ⭐
 - **Task 4:** [Enhanced Footer](https://bethelhills.github.io/alx_html_css/headphones/4-index.html)
 - **Task 3:** [Contact Form](https://bethelhills.github.io/alx_html_css/headphones/3-index.html)
