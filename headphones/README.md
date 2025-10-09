@@ -144,6 +144,8 @@ headphones/
 ├── 1-styles.css            # Task 1: Styles with font icons
 ├── 2-index.html            # Task 2: Our results section
 ├── 2-styles.css            # Task 2: Styles with results section
+├── 3-index.html            # Task 3: Contact form with validation
+├── 3-styles.css            # Task 3: Styles with animations
 ├── holberton_school-icon.css  # Custom icon font styles
 ├── demo-icon-font.html     # Icon font demo page
 ├── fonts/                  # Custom icon fonts
@@ -213,6 +215,38 @@ Implemented "Our results speak for themselves" section with:
     </div>
   </div>
 </div>
+```
+
+### Task 3: Contact Us Form
+**Files:** `3-index.html`, `3-styles.css`
+
+Implemented professional contact form with:
+- ✅ HTML5 form constraints (required, minlength, maxlength, pattern)
+- ✅ Real-time JavaScript validation
+- ✅ Beautiful CSS animations (shake, pulse, fade, slide)
+- ✅ Loading state with spinner animation
+- ✅ Success message with auto-hide
+- ✅ Error messages for each field
+- ✅ Input focus effects and transitions
+- ✅ Fully responsive design
+- ✅ Accessibility features (ARIA labels)
+
+**Form Features:**
+- 📝 Name field (2-50 characters)
+- 📧 Email validation with regex pattern
+- 💬 Message textarea (10-500 characters)
+- ⚡ Real-time validation on blur
+- 🎨 Shake animation on error
+- ✨ Success pulse animation
+- 🔄 Loading spinner on submit
+- ✅ Success message display
+
+**Animations:**
+```css
+@keyframes shake { /* Error state */ }
+@keyframes successPulse { /* Valid input */ }
+@keyframes slideDown { /* Success message */ }
+@keyframes spin { /* Loading spinner */ }
 ```
 
 ---
