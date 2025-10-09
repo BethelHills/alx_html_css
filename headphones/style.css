@@ -119,8 +119,13 @@ body {
 .features-description {
   max-width: 650px;
   margin: 0 auto 60px;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #0b0d17;
+  font-size: 16px;
+  padding: 0 20px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .feature-container {
   display: flex;
@@ -263,6 +268,14 @@ body {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1024px) {
+  .features-description {
+    max-width: 90%;
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav {
     display: none;
@@ -275,6 +288,13 @@ body {
   }
   .hero-content h1 {
     font-size: 2rem;
+  }
+  .features-description {
+    max-width: 95%;
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 1.8;
+    margin-bottom: 50px;
   }
   .card {
     width: 150px;
