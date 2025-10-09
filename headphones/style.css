@@ -66,16 +66,35 @@ body {
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
+  display: inline-block;
 }
 .hero-description {
   max-width: 650px;
-  margin: 30px auto 0;
+  margin: 40px auto 0;
   line-height: 1.8;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
   text-align: center;
   padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hero-description {
+    max-width: 580px;
+    font-size: 15px;
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-description {
+    max-width: 90%;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
 }
 
 /* FEATURES */
