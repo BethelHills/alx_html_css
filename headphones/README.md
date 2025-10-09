@@ -142,6 +142,8 @@ headphones/
 ├── 0-styles.css            # Task 0: Base styles
 ├── 1-index.html            # Task 1: What we do with font icons
 ├── 1-styles.css            # Task 1: Styles with font icons
+├── 2-index.html            # Task 2: Our results section
+├── 2-styles.css            # Task 2: Styles with results section
 ├── holberton_school-icon.css  # Custom icon font styles
 ├── demo-icon-font.html     # Icon font demo page
 ├── fonts/                  # Custom icon fonts
@@ -187,6 +189,31 @@ Implemented "What we do..." section with:
 ```
 
 **View Demo:** Open `demo-icon-font.html` to see all available icons
+
+### Task 2: Our Results Section
+**Files:** `2-index.html`, `2-styles.css`
+
+Implemented "Our results speak for themselves" section with:
+- ✅ Pentagon-shaped result cards
+- ✅ Reused component patterns from Task 1
+- ✅ 4 result items with statistics
+- ✅ Background image positioning
+- ✅ Overlaid content (percentage + text)
+- ✅ Responsive design for all devices
+- ✅ Generic, reusable structure
+
+**Component Structure:**
+```html
+<div class="result-item">
+  <div class="pentagon-wrapper">
+    <img src="assets/image/pentagone.png" alt="" class="pentagon-bg" aria-hidden="true">
+    <div class="result-content">
+      <div class="result-percentage">+2%</div>
+      <p class="result-text">Lorem ipsum dolor</p>
+    </div>
+  </div>
+</div>
+```
 
 ---
 
